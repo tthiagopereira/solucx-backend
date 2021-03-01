@@ -20,6 +20,8 @@ https://documenter.getpostman.com/view/4150779/TWDdhsqB
 # Configurar o arquivo .env
 
 * cp .env.example .env
+* nano .env
+
 
 * DB_CONNECTION=mysql
 * DB_HOST=mysql
