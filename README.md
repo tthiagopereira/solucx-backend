@@ -1,9 +1,45 @@
-# Lumen PHP Teste
+#TESTE SOLUCX
+* Ubuntu 20
+* Docker
+* Mysql 
+* PHP 7.4
+# Modelagem
+![Alt text](tela%20relacional.png "Title")
 
 API Documentação
 https://documenter.getpostman.com/view/4150779/TWDdhsqB
 
-# Instalar
+# Recomendações usar o postman para testes
 
-git clone https://github.com/tthiagopereira/Teste-Backend-SoluCX.git
-# solucx-backend
+# Configurar projeto
+
+* git clone https://github.com/tthiagopereira/solucx-backend.git
+* cd solucx-backend
+* composer install
+
+# Configurar Docker
+
+* sudo docker-compose up -d
+* verificar se os servisos subiu corretamente  
+- nginx, mysql, php 
+* Caso não tenha subido de forma correta rode novamente esse comando sudo docker-compose up -d
+
+# Criar banco de dados
+
+* sudo docker exec -it mysql mysql -u root -p
+* password: 12345
+* create database solucx;
+* exit ;
+
+# Configurar o arquivo .env
+
+* DB_CONNECTION=mysql
+* DB_HOST=mysql
+* DB_PORT=3306
+* DB_DATABASE=solucx
+* DB_USERNAME=root
+* DB_PASSWORD=12345
+  
+# Executar comando para criar as tabelas no banco de dados (Migration)
+
+* sudo docker-compose run php php artisan migrate
