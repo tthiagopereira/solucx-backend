@@ -50,3 +50,37 @@ https://documenter.getpostman.com/view/4150779/TWDdhsqB
 * sudo docker-compose run php php artisan migrate
 
 # Usando o POSTMAN
+
+# Cliente
+* http://localhost:8080
+  
+
+* GET /api/cliente
+* GET /api/cliente/{id}
+* PUT /api/cliente/{id}
+* DEL /api/cliente/{id}
+* POST /api/cliente
+
+# Colaborador
+
+* GET /api/colaborador
+* GET /api/colaborador/{id}
+* PUT /api/colaborador/{id}
+* DEL /api/colaborador/{id}
+* POST /api/colaborador
+
+# Loja
+* GET /api/lojas
+* GET /api/lojas/{id}
+* PUT /api/lojas/{id}
+* DEL /api/lojas/{id}
+* POST /api/lojas
+ 
+# Trasações
+* GET /api/transacoes
+* PUT /api/transacoes/{id}
+* POST /api/transacoes
+# Avaliação
+* GET /api/avaliacao
+* POST /api/avaliacao
+
