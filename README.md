@@ -31,7 +31,7 @@ https://documenter.getpostman.com/view/4150779/TWDdhsqB
 * sudo docker-compose up -d
 * verificar se os servisos subiu corretamente
 * sudo docker container ls
-- nginx, mysql, php 
+* nginx, mysql, php 
 * Caso não tenha subido de forma correta rode novamente esse comando sudo docker-compose up -d
 
 # Criar banco de dados
