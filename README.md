@@ -17,10 +17,20 @@ https://documenter.getpostman.com/view/4150779/TWDdhsqB
 * cd solucx-backend
 * composer install
 
+# Configurar o arquivo .env
+
+* DB_CONNECTION=mysql
+* DB_HOST=mysql
+* DB_PORT=3306
+* DB_DATABASE=solucx
+* DB_USERNAME=root
+* DB_PASSWORD=12345
+
 # Configurar Docker
 
 * sudo docker-compose up -d
-* verificar se os servisos subiu corretamente  
+* verificar se os servisos subiu corretamente
+* sudo docker container ls
 - nginx, mysql, php 
 * Caso não tenha subido de forma correta rode novamente esse comando sudo docker-compose up -d
 
@@ -30,16 +40,9 @@ https://documenter.getpostman.com/view/4150779/TWDdhsqB
 * password: 12345
 * create database solucx;
 * exit ;
-
-# Configurar o arquivo .env
-
-* DB_CONNECTION=mysql
-* DB_HOST=mysql
-* DB_PORT=3306
-* DB_DATABASE=solucx
-* DB_USERNAME=root
-* DB_PASSWORD=12345
   
 # Executar comando para criar as tabelas no banco de dados (Migration)
 
 * sudo docker-compose run php php artisan migrate
+
+# Usando o POSTMAN
